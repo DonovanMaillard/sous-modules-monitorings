@@ -20,17 +20,6 @@
 ],
   "specific": {
 
-    "cd_nom1": {
-      "type_widget": "taxonomy",
-      "attribut_label": "Espèces observées",
-      "keyValue": "cd_nom",
-      "keyLabel": "__MODULE.TAXONOMY_DISPLAY_FIELD_NAME",
-      "multiple": false,
-      "api": "taxref/allnamebylist/__MODULE.ID_LIST_TAXONOMY",
-      "application": "TaxHub",
-      "required": false,
-      "type_util": "taxonomy"
-    } ,
     "id_nomenclature_stade": {
       "type_widget": "nomenclature",
       "attribut_label": "Stade",
@@ -54,8 +43,8 @@
       "type_widget": "number",
       "attribut_label": "Nombre (compté)",
       "required": false,
-      "min": -25,
-      "max": 60,
+      "min": -1,
+      "max": 500,
       "hidden": "({value}) => value.nombre != 'Compté'"
     },
     "nombre_estime": {
